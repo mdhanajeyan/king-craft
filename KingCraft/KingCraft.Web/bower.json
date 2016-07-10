@@ -1,0 +1,6 @@
+{
+  "name": "myproject",
+  "dependencies": {
+    "angular-route": "^1.5.7"
+  }
+}
