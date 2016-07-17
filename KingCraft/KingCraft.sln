@@ -5,6 +5,14 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingCraft.Web", "KingCraft.Web\KingCraft.Web.csproj", "{71D0117F-6A1A-4CCD-8A08-4F55C2E85B53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingCraft.Contracts", "KingCraft.Contracts\KingCraft.Contracts.csproj", "{7D49236D-633C-40CF-8AFE-690CF2480C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingCraft.Core", "KingCraft.Core\KingCraft.Core.csproj", "{771F6CEF-0AC6-47A3-AD0E-9EDFAD834971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingCraft.IOC", "KingCraft.IOC\KingCraft.IOC.csproj", "{49BD0D52-8DCE-4BD1-8363-568BEA2E4077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingCraft.Persistence", "KingCraft.Persistence\KingCraft.Persistence.csproj", "{172677A4-4892-4E97-A833-11D6DA0803A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{71D0117F-6A1A-4CCD-8A08-4F55C2E85B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71D0117F-6A1A-4CCD-8A08-4F55C2E85B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71D0117F-6A1A-4CCD-8A08-4F55C2E85B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D49236D-633C-40CF-8AFE-690CF2480C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D49236D-633C-40CF-8AFE-690CF2480C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D49236D-633C-40CF-8AFE-690CF2480C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D49236D-633C-40CF-8AFE-690CF2480C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771F6CEF-0AC6-47A3-AD0E-9EDFAD834971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771F6CEF-0AC6-47A3-AD0E-9EDFAD834971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771F6CEF-0AC6-47A3-AD0E-9EDFAD834971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771F6CEF-0AC6-47A3-AD0E-9EDFAD834971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49BD0D52-8DCE-4BD1-8363-568BEA2E4077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49BD0D52-8DCE-4BD1-8363-568BEA2E4077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49BD0D52-8DCE-4BD1-8363-568BEA2E4077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49BD0D52-8DCE-4BD1-8363-568BEA2E4077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172677A4-4892-4E97-A833-11D6DA0803A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172677A4-4892-4E97-A833-11D6DA0803A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172677A4-4892-4E97-A833-11D6DA0803A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172677A4-4892-4E97-A833-11D6DA0803A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,3 +39,7 @@ F:\Github\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Http.WebHost.xml
 F:\Github\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.csprojResolveAssemblyReference.cache
 F:\Github\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.pdb
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Contracts.dll
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.dll
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Contracts.pdb
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.pdb
