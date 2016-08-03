@@ -28,7 +28,7 @@ paths.fonts = "./bower_components/font-awesome/fonts/*";
 
 paths.jsDest = paths.contentRoot + "Scripts/js";
 paths.cssDest = paths.contentRoot + "Content/css";
-paths.fontsDest = paths.contentRoot + "Content/fonts";
+paths.fontsDest = paths.contentRoot + "Content/css/fonts";
 
 gulp.task('min:js', function () {
     return gulp.src([paths.jqueryJs, paths.raphaelJs, paths.morrisJs, paths.angularJs, paths.angularRouteJs])

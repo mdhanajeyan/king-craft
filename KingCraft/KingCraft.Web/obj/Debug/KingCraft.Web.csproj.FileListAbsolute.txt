@@ -10,11 +10,9 @@ F:\Github\king-craft\KingCraft\KingCraft.Web\bin\roslyn\System.Reflection.Metada
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\roslyn\vbc.exe
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\roslyn\VBCSCompiler.exe
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\roslyn\VBCSCompiler.exe.config
-F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Web.dll.config
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Web.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Web.pdb
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Microsoft.Web.Infrastructure.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Newtonsoft.Json.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\System.Net.Http.Formatting.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Helpers.dll
@@ -39,7 +37,13 @@ F:\Github\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Http.WebHost.xml
 F:\Github\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.csprojResolveAssemblyReference.cache
 F:\Github\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.pdb
-F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Contracts.dll
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.dll
-F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Contracts.pdb
 F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.pdb
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Autofac.dll
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.Mvc.dll
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.WebApi.dll
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Autofac.xml
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.Mvc.xml
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.WebApi.xml
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Web.dll.config
+F:\Github\king-craft\KingCraft\KingCraft.Web\bin\Microsoft.Web.Infrastructure.dll

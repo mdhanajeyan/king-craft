@@ -114,8 +114,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app-ctrl.js" />
+    <Content Include="app\app.js" />
+    <Content Include="app\configurations\routing-cfg.js" />
+    <Content Include="app\dashboard\dashboard-ctrl.js" />
+    <Content Include="app\dashboard\dashboard-svc.js" />
+    <Content Include="app\dashboard\dashboard.html" />
+    <Content Include="app\providers\route-resolver-provider.js" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\css\min\site.min.css" />
     <Content Include="Content\css\morris.css" />
     <Content Include="Content\css\sb-admin-2.css" />
@@ -1788,6 +1796,10 @@
     <Content Include="node_modules\yargs\node_modules\camelcase\readme.md" />
     <Content Include="node_modules\yargs\package.json" />
     <Content Include="node_modules\yargs\README.md" />
+    <Content Include="Content\css\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\css\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\css\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1796,15 +1808,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\login\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\API\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KingCraft.Contracts\KingCraft.Contracts.csproj">
-      <Project>{7d49236d-633c-40cf-8afe-690cf2480c0b}</Project>
-      <Name>KingCraft.Contracts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KingCraft.IOC\KingCraft.IOC.csproj">
       <Project>{49bd0d52-8dce-4bd1-8363-568bea2e4077}</Project>
       <Name>KingCraft.IOC</Name>
@@ -1825,7 +1834,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>9681</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:9681/</IISUrl>
+          <IISUrl>http://localhost:3000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
