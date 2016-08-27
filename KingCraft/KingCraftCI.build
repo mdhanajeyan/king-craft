@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+   ToolsVersion="4.6.1"
+   DefaultTargets="Compile">
+
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <NugetExec Condition="'$(NugetExec)'==''">E:\Nuget\Nuget.exe</NugetExec>
+    <_Cmd>"$(NugetExec)" restore .\KingCraft.sln</_Cmd>
+  </PropertyGroup>
+
+  <Target Name="Clean">
+    <RemoveDir Directories="D:\KCBuildArtifact"/>
+  </Target>
+
+  <Target Name="Init" DependsOnTargets="Clean">
+    <MakeDir Directories="D:\KCBuildArtifact"/>
+  </Target>
+
+  <Target Name="Compile" DependsOnTargets="Init;EnsureNuGetPackageBuildImports">
+    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=D:\KCBuildArtifact\;Configuration=$(Configuration)"/>
+  </Target>
+
+  <Target Name="EnsureNuGetPackageBuildImports">
+    <Exec Command="$(_Cmd)"></Exec>
+    <Message Text="Nuget Packages Restored Successfully"></Message>
+  </Target>
+</Project>
