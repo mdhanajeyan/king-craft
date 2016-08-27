@@ -10,15 +10,15 @@
   </PropertyGroup>
 
   <Target Name="Clean">
-    <RemoveDir Directories="D:\KCBuildArtifact"/>
+    <RemoveDir Directories="..\KCBuildArtifact"/>
   </Target>
 
   <Target Name="Init" DependsOnTargets="Clean">
-    <MakeDir Directories="D:\KCBuildArtifact"/>
+    <MakeDir Directories="..\KCBuildArtifact"/>
   </Target>
 
   <Target Name="Compile" DependsOnTargets="Init;EnsureNuGetPackageBuildImports">
-    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=D:\KCBuildArtifact\;Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=..\KCBuildArtifact\;Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="EnsureNuGetPackageBuildImports">
