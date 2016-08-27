@@ -18,7 +18,7 @@
   </Target>
 
   <Target Name="Compile" DependsOnTargets="Init;EnsureNuGetPackageBuildImports">
-    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=..\KCBuildArtifact\;Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=..\..\KCBuildArtifact\;Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="EnsureNuGetPackageBuildImports">
