@@ -18,7 +18,8 @@
   </Target>
 
   <Target Name="Compile" DependsOnTargets="Init;EnsureNuGetPackageBuildImports">
-    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=..\..\KCBuildArtifact\;Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\KingCraft.sln" Targets="Rebuild" Properties="OutDir=..\..\KCBuildArtifact\;Configuration=$(Configuration);DeployOnBuild=true;
+             PublishProfile=.\KingCraft.Web\Properties\PublishProfiles\filesystempublish.pubxml"/>
   </Target>
 
   <Target Name="EnsureNuGetPackageBuildImports">

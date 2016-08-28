@@ -1800,6 +1800,7 @@
     <Content Include="Content\css\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\css\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\css\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\filesystempublish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
