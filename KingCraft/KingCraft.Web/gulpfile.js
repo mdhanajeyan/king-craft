@@ -13,49 +13,58 @@ var paths = {
     contentRoot: "./"
 }
 
-paths.bootstrapCss = "../bower_components/bootstrap/dist/css/bootstrap.css";
-paths.sbAdminCss = "../bower_components/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css";
-paths.fontAwesomeCss = "../bower_components/font-awesome/css/font-awesome.css";
-paths.morrisCss = "../bower_components/morrisjs/morris.css";
+var cssSource = [
+    "../bower_components/bootstrap/dist/css/bootstrap.css",
+    "../bower_components/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css",
+    "../bower_components/font-awesome/css/font-awesome.css",
+    "../bower_components/morrisjs/morris.css"
+];
 
-paths.jqueryJs = "../bower_components/jquery/dist/jquery.js";
-paths.raphaelJs = "../bower_components/raphael/raphael.js";
-paths.morrisJs = "../bower_components/morrisjs/morris.js";
-paths.angularJs = "./bower_components/angular/angular.js";
-paths.angularRouteJs = "./bower_components/angular-route/angular-route.js";
+var jsSource = [
+    "../bower_components/jquery/dist/jquery.js",
+    "../bower_components/raphael/raphael.js",
+    "../bower_components/morrisjs/morris.js",
+    "./bower_components/angular/angular.js",
+    "./bower_components/angular-route/angular-route.js"
+];
 
-paths.fonts = "./bower_components/font-awesome/fonts/*";
+var fontSource = ["./bower_components/font-awesome/fonts/*"];
 
 paths.jsDest = paths.contentRoot + "Scripts/js";
 paths.cssDest = paths.contentRoot + "Content/css";
 paths.fontsDest = paths.contentRoot + "Content/css/fonts";
 
-gulp.task('min:js', function () {
-    return gulp.src([paths.jqueryJs, paths.raphaelJs, paths.morrisJs, paths.angularJs, paths.angularRouteJs])
+gulp.task('min:js', function ()
+{
+    return gulp.src(jsSource)
     .pipe(concat(paths.jsDest + "/min/site.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("."));
 });
 
-gulp.task('copy:js', function () {
-    return gulp.src([paths.jqueryJs, paths.raphaelJs, paths.morrisJs, paths.angularJs, paths.angularRouteJs])
+gulp.task('copy:js', function ()
+{
+    return gulp.src(jsSource)
     .pipe(gulp.dest(paths.jsDest));
 });
 
-gulp.task('min:css', function () {
-    return gulp.src([paths.bootstrapCss, paths.sbAdminCss, paths.fontAwesomeCss, paths.morrisCss])
+gulp.task('min:css', function ()
+{
+    return gulp.src(cssSource)
     .pipe(concat(paths.cssDest + "/min/site.min.css"))
     .pipe(cssmin())
     .pipe(gulp.dest("."));
 });
 
-gulp.task('copy:css', function () {
-    return gulp.src([paths.bootstrapCss, paths.sbAdminCss, paths.fontAwesomeCss, paths.morrisCss])
+gulp.task('copy:css', function ()
+{
+    return gulp.src(cssSource)
      .pipe(gulp.dest(paths.cssDest));
 });
 
-gulp.task("copy:fonts", function () {
-    return gulp.src([paths.fonts])
+gulp.task("copy:fonts", function ()
+{
+    return gulp.src(fontSource)
     .pipe(gulp.dest(paths.fontsDest));
 });
 

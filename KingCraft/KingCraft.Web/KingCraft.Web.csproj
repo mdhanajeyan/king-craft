@@ -116,10 +116,18 @@
   <ItemGroup>
     <Content Include="app\app-ctrl.js" />
     <Content Include="app\app.js" />
+    <Content Include="app\common-extensions\jquery-extension-import-css.js" />
+    <Content Include="app\common-extensions\jquery-extension-import-js.js" />
+    <Content Include="app\common-extensions\require-css-file.js" />
+    <Content Include="app\common-extensions\require-file.js" />
     <Content Include="app\configurations\routing-cfg.js" />
     <Content Include="app\dashboard\dashboard-ctrl.js" />
     <Content Include="app\dashboard\dashboard-svc.js" />
     <Content Include="app\dashboard\dashboard.html" />
+    <Content Include="app\directives\directive.js" />
+    <Content Include="app\directives\kc-menu\kc-menu-dirtv.js" />
+    <Content Include="app\directives\kc-menu\kc-menu.html" />
+    <Content Include="app\directives\kc-menu\kc-meu-ctrl.js" />
     <Content Include="app\providers\route-resolver-provider.js" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\font-awesome.css" />
@@ -127,6 +135,7 @@
     <Content Include="Content\css\min\site.min.css" />
     <Content Include="Content\css\morris.css" />
     <Content Include="Content\css\sb-admin-2.css" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
     <Content Include="node_modules\align-text\index.js" />
