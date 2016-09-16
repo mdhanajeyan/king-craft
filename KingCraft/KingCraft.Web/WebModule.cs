@@ -1,12 +1,12 @@
 ﻿using Autofac;
 
-namespace KingCraft.Core
+namespace KingCraft.Web
 {
-    public class CoreModule : Module
+    public class WebModule:Module
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(typeof(CoreModule).Assembly)
+            builder.RegisterAssemblyTypes(typeof(WebModule).Assembly)
                 .AsImplementedInterfaces();
 
             base.Load(builder);

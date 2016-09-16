@@ -933,11 +933,13 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\AccountController.cs" />
     <Compile Include="Controllers\MVC\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -1820,10 +1822,13 @@
   <ItemGroup>
     <Folder Include="app\login\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\API\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\KingCraft.Contracts\KingCraft.Contracts.csproj">
+      <Project>{7d49236d-633c-40cf-8afe-690cf2480c0b}</Project>
+      <Name>KingCraft.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\KingCraft.IOC\KingCraft.IOC.csproj">
       <Project>{49bd0d52-8dce-4bd1-8363-568bea2e4077}</Project>
       <Name>KingCraft.IOC</Name>
@@ -1844,7 +1849,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>9681</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3000/</IISUrl>
+          <IISUrl>http://localhost:1001/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/KingCraft</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

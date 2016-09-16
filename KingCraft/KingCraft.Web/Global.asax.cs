@@ -1,23 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using System.Web.Security;
-using System.Web.SessionState;
 using System.Web.Http;
+using Autofac;
+using Autofac.Integration.Mvc;
+using Autofac.Integration.WebApi;
+using KingCraft.IOC;
 
 namespace KingCraft.Web
 {
     public class Global : HttpApplication
     {
+        private static IContainer Container { get; set; }
         void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
+            var container = SetupDependencyInjection();
+            var config = GlobalConfiguration.Configuration;
+
+            //MVC
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
             AreaRegistration.RegisterAllAreas();
+
+            //Api
+            config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+
+            // Route Registration
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+
+        private IContainer SetupDependencyInjection()
+        {
+            var builder = new ContainerBuilder();
+
+            //Register our mvc controller 
+            builder.RegisterControllers(typeof(Global).Assembly);
+
+            //Register api controllers
+            builder.RegisterApiControllers(typeof(Global).Assembly);
+            builder.RegisterWebApiFilterProvider(GlobalConfiguration.Configuration);
+
+            //Register module
+            builder.RegisterModule(new AutofacWebTypesModule());
+
+            builder.RegisterModule(new IocModule());
+
+            builder.RegisterAssemblyModules(typeof(WebModule).Assembly);
+
+            Container = builder.Build();
+            return Container;
         }
     }
 }

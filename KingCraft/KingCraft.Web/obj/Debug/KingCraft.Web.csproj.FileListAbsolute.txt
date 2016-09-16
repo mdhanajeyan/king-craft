@@ -128,7 +128,6 @@ D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Web.pdb
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Autofac.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.Mvc.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.WebApi.dll
-D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Microsoft.Web.Infrastructure.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Newtonsoft.Json.dll
@@ -141,7 +140,6 @@ D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Razor.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Webpages.Deployment.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Webpages.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Webpages.Razor.dll
-D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.pdb
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Autofac.xml
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.Mvc.xml
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\Autofac.Integration.WebApi.xml
@@ -159,3 +157,11 @@ D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\System.Web.Http.WebHost.xml
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.csprojResolveAssemblyReference.cache
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\obj\Debug\KingCraft.Web.pdb
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Contracts.dll
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Contracts.pdb
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.dll
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Persistence.dll
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Core.dll
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.pdb
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Persistence.pdb
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Core.pdb
