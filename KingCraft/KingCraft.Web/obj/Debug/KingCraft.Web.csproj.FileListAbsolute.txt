@@ -165,3 +165,7 @@ D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Core.dll
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.IOC.pdb
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Persistence.pdb
 D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\KingCraft.Core.pdb
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\EntityFramework.dll
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\EntityFramework.xml
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\EntityFramework.SqlServer.dll
+D:\Git\DJ\king-craft\KingCraft\KingCraft.Web\bin\EntityFramework.SqlServer.xml

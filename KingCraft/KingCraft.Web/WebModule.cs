@@ -2,7 +2,7 @@
 
 namespace KingCraft.Web
 {
-    public class WebModule:Module
+    public class WebModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {

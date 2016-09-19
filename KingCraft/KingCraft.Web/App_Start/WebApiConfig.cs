@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Newtonsoft.Json.Serialization;
 using System.Web.Http;
-using Newtonsoft.Json.Serialization;
 
 namespace KingCraft.Web
 {
@@ -19,7 +16,7 @@ namespace KingCraft.Web
 
             json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
-            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
 
             config.Formatters.Remove(config.Formatters.XmlFormatter);
         }
